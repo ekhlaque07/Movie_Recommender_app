@@ -24,10 +24,10 @@ def recommend(movie):
     return recommended_movies 
 
 
-movies_dict = pickle.load(open('C:/Users/Ekhlaque/Desktop/Movie Recommendation System/movie_dict.pkl','rb'))
+movies_dict = pickle.load(open('movie_dict.pkl','rb'))
 movies = pd.DataFrame(movies_dict)
 
-similarity = joblib.load('C:/Users/Ekhlaque/Desktop/Movie Recommendation System/similarity.joblib')
+similarity = joblib.load('similarity.joblib')
 
 st.title('Movie Recommender System')
 
